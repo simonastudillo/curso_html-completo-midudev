@@ -1,27 +1,210 @@
-<h1>Portfolio de Simón</h1>
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8" /> <!-- Comentario: Define la codificación de caracteres -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Porfolio de Simón Astudillo</title>
+      <link rel="icon" type="image/png" href="./assets/img/24295075.jfif" />
 
-<p>+11 años de experiencia como <strong>Ingeniero de Software</strong>.</p>
+      <meta name="robots" content="index, follow" />
+      <meta name="theme-color" content="#09f" />
+      <!-- SEO -->
+      <meta name="description" content="Portfolio de Simón Astudillo, Ingeniero de Software con más de 11 años de experiencia en desarrollo web y aplicaciones moviles FullStack." />
+      <link rel="alternate" hreflang="es" href="https://simonastudillo.dev/ejercicios/index.html" />
+      <link rel="canonical" href="https://simonastudillo.dev">
+      <!-- Open Graph -->
+      <meta property="og:title" content="Portfolio de Simón Astudillo" />
+      <meta property="og:description" content="Portfolio de Simón Astudillo, Ingeniero de Software con más de 11 años de experiencia en desarrollo web y aplicaciones moviles FullStack." />
+      <meta property="og:image" content="./assets/img/24295075.jfif" />
+      <meta property="og:image:alt" content="Una fotografía de Simón Astudillo generada por IA." />
+      <style>
+         body {
+            background: #f0f0f0;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Comentarios -->
+      <header>
+         <h1>Portfolio de Simón</h1>
+         <nav>
+            <a href="#experiencia">Experiencia</a> |
+            <a href="#proyectos">Proyectos</a> |
+            <a
+               href="https://www.ejemplo.com"
+               target="_blank"
+               rel="noreferrer"
+            >Contacto</a>
+         </nav>
+      </header>
 
-<h2>Experiencia</h2>
+      <dialog id="modal">
+         <h1>¿Sabías que puede abrir una modal así?</h1>
+         <p>Y es totalmente nativo</p>
+         <button id="hide">Cerrar modal</button>
+      </dialog>
 
-<ul>
-   <li class="list-item">Raef Soluciones Informáticas - 2014 - Actualidad</li>
-   <ul>
-      <li>Desarrollador Externo - Masisa - 2014 - 2018</li>
-      <li>Desarrollador Externo - Masisa - 2024 - Actualidad</li>
-      <li>Desarrollador Externo - Derco - 2017 - 2023</li>
-      <li>Desarrollador Externo - Gesex - 2015 - 2018</li>
-      <li>Desarrollador Externo - Envases Central - Coca Cola - 2017 - 2019</li>
-      <li>Desarrollador Externo - Cartoni - 2018 - Actualidad</li>
-      <li>Desarrollador Externo - Acreditaccion - 2019 - 2025</li>
-      <li>Desarrollador Externo - Clínica medica Manuel Montt - 2019 - Actualidad</li>
-   </ul>
-</ul>
+      <button id="show">Ver más información</button>
+      <script>
+         const openButton = document.getElementById("show");
+         const closeButton = document.getElementById("hide");
+         const modal = document.getElementById("modal");
 
-<img
-   width="200"
-   height="200"
-   src="./assets/img/24295075.jfif"
-   alt="Una fotografía de Simón Astudillo generada por IA."
-   title="Simón Astudillo"
-/>
+         openButton.addEventListener("click", () => {
+            modal.showModal();
+         });
+
+         closeButton.addEventListener("click", () => {
+            modal.close();
+         });
+      </script>
+
+      <main>
+      
+         <p>+11 años de experiencia como <strong>Ingeniero de Software</strong>.</p>
+
+         <h2 id="experiencia">Experiencia</h2>
+
+         <ul>
+            <li class="list-item">Raef Soluciones Informáticas - 2014 - Actualidad</li>
+            <ul>
+               <li>Desarrollador Externo - Masisa - 2014 - 2018</li>
+               <li>Desarrollador Externo - Masisa - 2024 - Actualidad</li>
+               <li>Desarrollador Externo - Derco - 2017 - 2023</li>
+               <li>Desarrollador Externo - Gesex - 2015 - 2018</li>
+               <li>Desarrollador Externo - Envases Central - Coca Cola - 2017 - 2019</li>
+               <li>Desarrollador Externo - Cartoni - 2018 - Actualidad</li>
+               <li>Desarrollador Externo - Acreditaccion - 2019 - 2025</li>
+               <li>Desarrollador Externo - Clínica medica Manuel Montt - 2019 - Actualidad</li>
+            </ul>
+         </ul>
+         
+         <a download="Foto_Simón_Astudillo" href="./assets/img/24295075.jfif">
+            <img
+               width="200"
+               height="200"
+               src="./assets/img/24295075.jfif"
+               alt="Una fotografía de Simón Astudillo generada por IA."
+               title="Simón Astudillo"
+               loading="lazy"
+            />
+         </a>
+
+         <h2 id="proyectos">Proyectos realizados</h2>
+         <aside>
+            <header>
+               <h3>Mis tecnologías favoritas</h3>
+            </header>
+            <ol type="1" reversed start="10">
+               <li>HTML</li>
+               <li>CSS</li>
+               <li value="5">JavaScript</li>
+               <li>React</li>
+               <li>PHP</li>
+            </ol>
+         </aside>
+
+         <button role="button">
+            Haz click aquí
+         </button>
+
+         <section>
+            <article>
+               <header>
+                  <h4>Sitio web Corporativo</h4>
+               </header>
+               <p>Desarrollo de un sitio web corporativo con una interfaz moderna y responsiva.</p>
+               <footer>
+                  <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+               </footer>
+            </article>
+            <article>
+               <header>
+                  <h4>Sitio web Corporativo</h4>
+               </header>
+               <p>Desarrollo de un sitio web corporativo con una interfaz moderna y responsiva.</p>
+               <footer>
+                  <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+               </footer>
+            </article>
+            <article>
+               <header>
+                  <h4>Sitio web Corporativo</h4>
+               </header>
+               <p>Desarrollo de un sitio web corporativo con una interfaz moderna y responsiva.</p>
+               <footer>
+                  <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+               </footer>
+            </article>
+         </section>
+
+         <section>
+            <h2>Preguntas frecuentes</h2>
+
+            <details>
+               <summary>¿Qué estudios tienes?</summary>
+               <p>Estudie Ingeniería en Informática en Duoc UC de Viña del Mar</p>
+            </details>
+            <details>
+               <summary>¿Cuales son tus hobbies?</summary>
+               <p>Me gusta la programación, jugar videojuegos, caminar y ver series en especial anime.</p>
+            </details>
+            <details>
+               <summary>¿Cuál es tu lenguaje de programación favorito?</summary>
+               <p>Mi lenguaje de programación favorito es PHP ya que fue el primero que use profesionalmente.</p>
+            </details>
+         </section>
+
+         <section>
+            <h2>Formulario de contacto</h2>
+
+            <form action="/" method="post">
+               <fieldset>
+                  <legend>Información Personal</legend>
+
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="name" name="nombre" placeholder="Ingresa tu nombre" />
+
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Ingresa tu email" />
+               </fieldset>
+
+               <fieldset>
+                  <legend>Información adicional</legend>
+
+                  <label for="telefono">Teléfono:</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" />
+
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+               </fieldset>
+
+               <fieldset>
+                  <legend>Otros</legend>
+
+                  <label for="why">¿Por qué te gustaría contactarnos?</label>
+                  <select name="why" id="why">
+                     <option value="consulta">Consulta</option>
+                     <option value="soporte">Soporte</option>
+                     <option value="trabajo">Trabajo</option>
+                     <option value="otros">Otros</option>
+                  </select>
+
+                  <div>
+                     <label for="terms">¿Aceptas los términos y condiciones?</label>
+                     <input type="checkbox" id="terms" name="terms" required />
+                  </div>
+               </fieldset>
+
+               <button type="submit">Enviar</button>
+            </form>
+         </section>
+      </main>
+      <footer>
+         <p>&copy; 2025 Simón Astudillo. Todos los derechos reservados.</p>
+
+         <a href="mailto:simon.astudillo@example.com">Contacto</a>
+         <a href="tel:+56912345678">Llamar</a>
+      </footer>
+   </body>
+</html>
